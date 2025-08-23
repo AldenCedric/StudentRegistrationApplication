@@ -144,7 +144,7 @@ namespace StudentRegistrationApplication
             lblDateOfBirth.Name = "lblDateOfBirth";
             lblDateOfBirth.Size = new Size(257, 20);
             lblDateOfBirth.TabIndex = 7;
-            lblDateOfBirth.Text = "Date of Birth (MM/DD/YY):";
+            lblDateOfBirth.Text = "Date of Birth (DD/MM/YY):";
             // 
             // cmbDay
             // 

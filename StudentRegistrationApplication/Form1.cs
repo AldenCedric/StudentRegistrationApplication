@@ -5,6 +5,7 @@ namespace StudentRegistrationApplication
         public Form1()
         {
             InitializeComponent();
+            PopulateComboBoxes();
         }
     }
 }

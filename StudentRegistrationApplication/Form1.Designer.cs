@@ -185,9 +185,9 @@ namespace StudentRegistrationApplication
             // txtAddress
             // 
             txtAddress.Font = new Font("Arial", 12F);
-            txtAddress.Location = new Point(116, 234);
+            txtAddress.Location = new Point(131, 234);
             txtAddress.Name = "txtAddress";
-            txtAddress.Size = new Size(308, 30);
+            txtAddress.Size = new Size(293, 30);
             txtAddress.TabIndex = 12;
             // 
             // btnDisplay

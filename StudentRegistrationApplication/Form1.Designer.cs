@@ -57,142 +57,190 @@ namespace StudentRegistrationApplication
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-
-            // Window properties
-            this.Text = "Student Registration Application";
-            this.Size = new Size(600, 500);
-            this.StartPosition = FormStartPosition.CenterScreen;
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.BackColor = Color.White;
-
-            // Student Name Label
             lblStudentName = new Label();
-            lblStudentName.Text = "Student Name:";
-            lblStudentName.Location = new Point(30, 30);
-            lblStudentName.Size = new Size(120, 20);
-            lblStudentName.Font = new Font("Arial", 12, FontStyle.Bold);
-            this.Controls.Add(lblStudentName);
-
-            // Student Name TextBox
             txtStudentName = new TextBox();
-            txtStudentName.Location = new Point(160, 28);
-            txtStudentName.Size = new Size(200, 25);
-            txtStudentName.Font = new Font("Arial", 12);
-            this.Controls.Add(txtStudentName);
-
-            // Student ID Label
             lblStudentId = new Label();
-            lblStudentId.Text = "Student ID:";
-            lblStudentId.Location = new Point(30, 70);
-            lblStudentId.Size = new Size(120, 20);
-            lblStudentId.Font = new Font("Arial", 12, FontStyle.Bold);
-            this.Controls.Add(lblStudentId);
-
-            // Student ID TextBox
             txtStudentId = new TextBox();
-            txtStudentId.Location = new Point(160, 68);
-            txtStudentId.Size = new Size(200, 25);
-            txtStudentId.Font = new Font("Arial", 12);
-            this.Controls.Add(txtStudentId);
-
-            // Gender Label
             lblGender = new Label();
-            lblGender.Text = "Gender:";
-            lblGender.Location = new Point(30, 110);
-            lblGender.Size = new Size(120, 20);
-            lblGender.Font = new Font("Arial", 12, FontStyle.Bold);
-            this.Controls.Add(lblGender);
-
-            // Male Radio Button
             rbMale = new RadioButton();
-            rbMale.Text = "Male";
-            rbMale.Location = new Point(160, 108);
-            rbMale.Size = new Size(80, 25);
-            rbMale.Font = new Font("Arial", 12);
-            rbMale.Checked = true;
-            this.Controls.Add(rbMale);
-
-            // Female Radio Button
             rbFemale = new RadioButton();
-            rbFemale.Text = "Female";
-            rbFemale.Location = new Point(250, 108);
-            rbFemale.Size = new Size(80, 25);
-            rbFemale.Font = new Font("Arial", 12);
-            this.Controls.Add(rbFemale);
-
-            // Date of Birth Label
             lblDateOfBirth = new Label();
-            lblDateOfBirth.Text = "Date of Birth:";
-            lblDateOfBirth.Location = new Point(30, 150);
-            lblDateOfBirth.Size = new Size(120, 20);
-            lblDateOfBirth.Font = new Font("Arial", 12, FontStyle.Bold);
-            this.Controls.Add(lblDateOfBirth);
-
-            // Day ComboBox
             cmbDay = new ComboBox();
-            cmbDay.Location = new Point(160, 148);
-            cmbDay.Size = new Size(60, 25);
-            cmbDay.Font = new Font("Arial", 12);
-            cmbDay.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.Controls.Add(cmbDay);
-
-            // Month ComboBox
             cmbMonth = new ComboBox();
-            cmbMonth.Location = new Point(230, 148);
-            cmbMonth.Size = new Size(80, 25);
-            cmbMonth.Font = new Font("Arial", 12);
-            cmbMonth.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.Controls.Add(cmbMonth);
-
-            // Year ComboBox
             cmbYear = new ComboBox();
-            cmbYear.Location = new Point(320, 148);
-            cmbYear.Size = new Size(80, 25);
-            cmbYear.Font = new Font("Arial", 12);
-            cmbYear.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.Controls.Add(cmbYear);
-
-            // Address Label
             lblAddress = new Label();
-            lblAddress.Text = "Address:";
-            lblAddress.Location = new Point(30, 190);
-            lblAddress.Size = new Size(120, 20);
-            lblAddress.Font = new Font("Arial", 12, FontStyle.Bold);
-            this.Controls.Add(lblAddress);
-
-            // Address TextBox
             txtAddress = new TextBox();
-            txtAddress.Location = new Point(160, 188);
-            txtAddress.Size = new Size(300, 25);
-            txtAddress.Font = new Font("Arial", 12);
-            this.Controls.Add(txtAddress);
-
-            // Display Button
             btnDisplay = new Button();
-            btnDisplay.Text = "Display";
-            btnDisplay.Location = new Point(30, 230);
-            btnDisplay.Size = new Size(100, 40);
-            btnDisplay.Font = new Font("Arial", 12);
-            btnDisplay.BackColor = Color.Crimson;
-            btnDisplay.ForeColor = Color.White;
-            btnDisplay.FlatStyle = FlatStyle.Flat;
-            btnDisplay.Click += new EventHandler(this.btnDisplay_Click);
-            this.Controls.Add(btnDisplay);
-
-            // Output Label
             lblOutput = new Label();
-            lblOutput.Location = new Point(30, 280);
-            lblOutput.Size = new Size(520, 150);
-            lblOutput.Font = new Font("Arial", 12, FontStyle.Bold);
+            SuspendLayout();
+            // 
+            // lblStudentName
+            // 
+            lblStudentName.Font = new Font("Arial", 12F, FontStyle.Bold);
+            lblStudentName.Location = new Point(30, 9);
+            lblStudentName.Name = "lblStudentName";
+            lblStudentName.Size = new Size(120, 20);
+            lblStudentName.TabIndex = 0;
+            lblStudentName.Text = "Student Name:";
+            // 
+            // txtStudentName
+            // 
+            txtStudentName.Font = new Font("Arial", 12F);
+            txtStudentName.Location = new Point(30, 32);
+            txtStudentName.Name = "txtStudentName";
+            txtStudentName.Size = new Size(200, 30);
+            txtStudentName.TabIndex = 1;
+            // 
+            // lblStudentId
+            // 
+            lblStudentId.Font = new Font("Arial", 12F, FontStyle.Bold);
+            lblStudentId.Location = new Point(30, 78);
+            lblStudentId.Name = "lblStudentId";
+            lblStudentId.Size = new Size(120, 20);
+            lblStudentId.TabIndex = 2;
+            lblStudentId.Text = "Student ID:";
+            // 
+            // txtStudentId
+            // 
+            txtStudentId.Font = new Font("Arial", 12F);
+            txtStudentId.Location = new Point(30, 101);
+            txtStudentId.Name = "txtStudentId";
+            txtStudentId.Size = new Size(200, 30);
+            txtStudentId.TabIndex = 3;
+            // 
+            // lblGender
+            // 
+            lblGender.Font = new Font("Arial", 12F, FontStyle.Bold);
+            lblGender.Location = new Point(30, 137);
+            lblGender.Name = "lblGender";
+            lblGender.Size = new Size(88, 20);
+            lblGender.TabIndex = 4;
+            lblGender.Text = "Gender:";
+            // 
+            // rbMale
+            // 
+            rbMale.Checked = true;
+            rbMale.Font = new Font("Arial", 12F);
+            rbMale.Location = new Point(124, 137);
+            rbMale.Name = "rbMale";
+            rbMale.Size = new Size(80, 25);
+            rbMale.TabIndex = 5;
+            rbMale.TabStop = true;
+            rbMale.Text = "Male";
+            // 
+            // rbFemale
+            // 
+            rbFemale.Font = new Font("Arial", 12F);
+            rbFemale.Location = new Point(210, 137);
+            rbFemale.Name = "rbFemale";
+            rbFemale.Size = new Size(96, 25);
+            rbFemale.TabIndex = 6;
+            rbFemale.Text = "Female";
+            // 
+            // lblDateOfBirth
+            // 
+            lblDateOfBirth.Font = new Font("Arial", 12F, FontStyle.Bold);
+            lblDateOfBirth.Location = new Point(30, 165);
+            lblDateOfBirth.Name = "lblDateOfBirth";
+            lblDateOfBirth.Size = new Size(257, 20);
+            lblDateOfBirth.TabIndex = 7;
+            lblDateOfBirth.Text = "Date of Birth (MM/DD/YY):";
+            // 
+            // cmbDay
+            // 
+            cmbDay.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbDay.Font = new Font("Arial", 12F);
+            cmbDay.Location = new Point(30, 197);
+            cmbDay.Name = "cmbDay";
+            cmbDay.Size = new Size(60, 31);
+            cmbDay.TabIndex = 8;
+            // 
+            // cmbMonth
+            // 
+            cmbMonth.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbMonth.Font = new Font("Arial", 12F);
+            cmbMonth.Location = new Point(96, 197);
+            cmbMonth.Name = "cmbMonth";
+            cmbMonth.Size = new Size(80, 31);
+            cmbMonth.TabIndex = 9;
+            // 
+            // cmbYear
+            // 
+            cmbYear.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbYear.Font = new Font("Arial", 12F);
+            cmbYear.Location = new Point(182, 197);
+            cmbYear.Name = "cmbYear";
+            cmbYear.Size = new Size(80, 31);
+            cmbYear.TabIndex = 10;
+            // 
+            // lblAddress
+            // 
+            lblAddress.Font = new Font("Arial", 12F, FontStyle.Bold);
+            lblAddress.Location = new Point(30, 237);
+            lblAddress.Name = "lblAddress";
+            lblAddress.Size = new Size(95, 20);
+            lblAddress.TabIndex = 11;
+            lblAddress.Text = "Address:";
+            // 
+            // txtAddress
+            // 
+            txtAddress.Font = new Font("Arial", 12F);
+            txtAddress.Location = new Point(116, 234);
+            txtAddress.Name = "txtAddress";
+            txtAddress.Size = new Size(308, 30);
+            txtAddress.TabIndex = 12;
+            // 
+            // btnDisplay
+            // 
+            btnDisplay.BackColor = Color.Crimson;
+            btnDisplay.FlatStyle = FlatStyle.Flat;
+            btnDisplay.Font = new Font("Arial", 12F);
+            btnDisplay.ForeColor = Color.White;
+            btnDisplay.Location = new Point(30, 282);
+            btnDisplay.Name = "btnDisplay";
+            btnDisplay.Size = new Size(232, 40);
+            btnDisplay.TabIndex = 13;
+            btnDisplay.Text = "Register Student";
+            btnDisplay.UseVisualStyleBackColor = false;
+            btnDisplay.Click += btnDisplay_Click;
+            // 
+            // lblOutput
+            // 
             lblOutput.BackColor = Color.LightGray;
             lblOutput.BorderStyle = BorderStyle.FixedSingle;
-            lblOutput.TextAlign = ContentAlignment.TopLeft;
+            lblOutput.Font = new Font("Arial", 12F, FontStyle.Bold);
+            lblOutput.Location = new Point(12, 337);
+            lblOutput.Name = "lblOutput";
             lblOutput.Padding = new Padding(10);
-            this.Controls.Add(lblOutput);
-
-            this.ResumeLayout(false);
+            lblOutput.Size = new Size(476, 154);
+            lblOutput.TabIndex = 14;
+            // 
+            // Form1
+            // 
+            BackColor = Color.White;
+            ClientSize = new Size(500, 500);
+            Controls.Add(lblStudentName);
+            Controls.Add(txtStudentName);
+            Controls.Add(lblStudentId);
+            Controls.Add(txtStudentId);
+            Controls.Add(lblGender);
+            Controls.Add(rbMale);
+            Controls.Add(rbFemale);
+            Controls.Add(lblDateOfBirth);
+            Controls.Add(cmbDay);
+            Controls.Add(cmbMonth);
+            Controls.Add(cmbYear);
+            Controls.Add(lblAddress);
+            Controls.Add(txtAddress);
+            Controls.Add(btnDisplay);
+            Controls.Add(lblOutput);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Student Registration Application";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

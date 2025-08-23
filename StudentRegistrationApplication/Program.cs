@@ -1,3 +1,6 @@
+using System;
+using System.Windows.Forms;
+
 namespace StudentRegistrationApplication
 {
     internal static class Program

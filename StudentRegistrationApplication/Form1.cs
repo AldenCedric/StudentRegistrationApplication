@@ -75,7 +75,7 @@ namespace StudentRegistrationApplication
                                $"Name: {studentName}\n" +
                                $"Student ID: {studentId}\n" +
                                $"Gender: {gender}\n" +
-                               $"Date of Birth (DD/MM/YY): {month}/{day}/{year}\n" +
+                               $"Date of Birth (DD/MM/YY): {day}/{month}/{year}\n" +
                                $"Address: {address}";
 
                 // Display in message box
